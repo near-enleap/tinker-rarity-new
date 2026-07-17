@@ -1,0 +1,30 @@
+﻿@font-face {
+    font-family: "VT";
+    src: url("public/font/VT323-Regular.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nft-item img {
+    background-image: url("public/img/picture/imageLoader.gif");
+}
+
+.modal-content {
+    background-image: url("public/img/picture/modalBg.png");
+}
+
+.nft-item {
+    background: transparent;
+    border: 0;
+    text-align: left;
+}
+
+.nft-item:focus {
+    outline: 2px solid #e2ab7e;
+    outline-offset: 4px;
+}
+
+.attr-item .progress-bar-wrapper {
+    margin: 6px 0;
+}
+

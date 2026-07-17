@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <title>Tinker Rarity Ranking</title>
+    <link rel="shortcut icon" href="public/img/logo/logo.ico">
+
+    <link href="public/css/page/index.css" type="text/css" rel="stylesheet">
+    <link href="public/css/plugin/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="path-fix.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="public/js/plugin/jquery.min.js"></script>
+    <script type="text/javascript" src="public/js/plugin/bootstrap.min.js"></script>
+    <script type="text/javascript" src="public/js/plugin/sweetalert.min.js"></script>
+    <script type="text/javascript" src="public/js/plugin/jquery.lazy.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <img src="public/img/picture/top-bg.png" id="topBG" alt="">
+            <div class="col-12">
+                <div id="topNav" class="d-flex justify-content-between">
+                    <a href="https://tinkerunion.com">
+                        <img src="public/img/picture/logo.png" id="topLogo" alt="Tinker Union">
+                    </a>
+                    <div id="rightNav">
+                        <p>TINKER RARITY RANKING</p>
+                        <form id="searchForm" method="get">
+                            <div class="input-group mb-3">
+                                <input id="queryInput" type="text" name="query" placeholder="Search here">
+                                <select id="typeSelect" name="type" class="form-control">
+                                    <option value="token">Search by Token</option>
+                                    <option value="rank">Search by Rank</option>
+                                </select>
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary search-btn" type="submit">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div id="loadingState" class="col-12 text-center">
+                <h2 id="noResult">Loading NFT data...</h2>
+                <img src="public/img/picture/noFoundBg.png" id="noResultBg" alt="">
+            </div>
+
+            <div id="recordsWrap" class="col-12 d-none">
+                <div id="recordsGrid" class="row"></div>
+            </div>
+
+            <div id="emptyState" class="col-12 text-center d-none">
+                <h2 id="noResult">No NFT found.</h2>
+                <img src="public/img/picture/noFoundBg.png" id="noResultBg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="nftModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <img src="public/img/picture/modalTop.png" id="modalTop" alt="">
+                <img src="public/img/picture/modalBottom.png" id="modalBottom" alt="">
+                <div class="modal-body">
+                    <h5 id="modalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 mb-5 mt-4">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <img src="public/img/nft/1.png" class="nftImage" alt="">
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-7 d-flex flex-column align-items-center text-left">
+                                        <h5 id="modalRank"></h5>
+                                        <p class="nftDesc">On NEAR, a union of 3,333 tinkers has formed to tink extraordinary tools and platforms to help the ever-growing ecosystem</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mb-5">
+                                <div id="attributeGrid" class="row attr-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static-index.js"></script>
+</body>
+</html>
+

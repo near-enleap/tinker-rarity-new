@@ -1,0 +1,21 @@
+{
+    "/js/prod/launchpad/near.min.js": "/js/prod/launchpad/near.min.js",
+    "/css/prod/launchpad/landing.min.css": "/css/prod/launchpad/landing.min.css",
+    "/js/prod/launchpad/landing.min.js": "/js/prod/launchpad/landing.min.js",
+    "/css/prod/launchpad/dashboard.min.css": "/css/prod/launchpad/dashboard.min.css",
+    "/js/prod/launchpad/dashboard.min.js": "/js/prod/launchpad/dashboard.min.js",
+    "/css/prod/launchpad/general.min.css": "/css/prod/launchpad/general.min.css",
+    "/js/prod/launchpad/generator.min.js": "/js/prod/launchpad/generator.min.js",
+    "/css/prod/launchpad/index.min.css": "/css/prod/launchpad/index.min.css",
+    "/js/prod/launchpad/index.min.js": "/js/prod/launchpad/index.min.js",
+    "/css/prod/admin/index.min.css": "/css/prod/admin/index.min.css",
+    "/css/prod/admin/dashboard.min.css": "/css/prod/admin/dashboard.min.css",
+    "/js/prod/admin/index.min.js": "/js/prod/admin/index.min.js",
+    "/css/prod/component/table.min.css": "/css/prod/component/table.min.css",
+    "/js/prod/component/table.min.js": "/js/prod/component/table.min.js",
+    "/css/prod/component/chartjs.min.css": "/css/prod/component/chartjs.min.css",
+    "/js/prod/component/chartjs.min.js": "/js/prod/component/chartjs.min.js",
+    "/js/prod/component/index_preload.min.js": "/js/prod/component/index_preload.min.js",
+    "/css/prod/component/index_preload.min.css": "/css/prod/component/index_preload.min.css",
+    "/js/prod/component/tinymce.min.js": "/js/prod/component/tinymce.min.js"
+}
